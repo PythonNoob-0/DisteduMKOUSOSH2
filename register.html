@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Дистанционное обучение по предмету Информатика МКОУ СОШ № 2 г. Острогожск</title>
+      <link rel="stylesheet" href="styles/register.css">
+      <link rel="icon" href="images/icon.ico" type="image/x-icon">.
+
+      <script src="js/checkbox.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title">
+            Регистрация на платформе дистанционного обучения
+         </div>
+         <form action="/register/src/registr.php" method="post">
+            <div class="field">
+                <input type="text" required name="surname">
+                <label>Фамилия </label>
+            </div>
+            <div class="field">
+                <input type="text" require name="name">
+                <label>Имя </label>
+            </div>
+            <div class="field">
+                <input type="text" required name="lastname">
+                <label>Отчество </label>
+            </div>
+
+            <div class="field">
+               <input type="text" required name="email">
+               <label>Email </label>
+            </div>
+            <div class="field">
+               <input type="password" required name="password">
+               <label>Пароль</label>
+            </div>
+            <div class="field">
+                <input type="password" required name="password_check">
+                <label>Введите пароль еще раз</label>
+            </div>
+                       
+            <div>
+               <input type="checkbox" class="checkTeacher" id="myCheck" onclick="myFunction()">
+               <label class="label_for_checkbox" for="myCheck">Зарегистрироваться как преподаватель</label>
+               <input type="text" id="hidden_input" placeholder="Укажите ваш ID преподавателя" name="idTeacher" style="display:none">
+            </div>
+            
+               
+            <div class="field">
+               <input type="submit" value="Зарегистрироваться">
+            </div>
+            
+         </form>
+
+         
+         
+
+         <div class="auth">
+            <label class="label_for_auth" for="auth">Уже зарегистрированы?</label>
+            <a href="auth.html" id="auth" class="btn_auth">Войти</a>
+         </div>
+        
+        
+      </div>
+   </body>
+</html>

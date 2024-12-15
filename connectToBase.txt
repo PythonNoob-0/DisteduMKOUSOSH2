@@ -1,0 +1,4 @@
+database: lasaruxh_inform
+password: Root123
+host: localhost
+user: lasaruxh_inform
